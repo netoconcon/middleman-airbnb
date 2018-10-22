@@ -1,0 +1,60 @@
+<div class="container" id="cities">
+  <h1>Where you can find us</h1>
+    <div class="container">
+      <div class="row">
+
+
+
+        <% data.cities.each do |key, value| %>
+
+
+
+
+                <div class="col-xs-12 col-sm-4">
+
+
+
+
+<div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= value.image_url %>);">
+  <div class="card-category">Popular</div>
+  <div class="card-description">
+    <h2><%= value.title  %></h2>
+    <p><%= value.subtitle%></p>
+  </div>
+  <img class="card-user" src=<%= value.avatar %>>
+  <a class="card-link" href="#" ></a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  <!-- insert <div class="card"> -->
+                </div>
+
+
+
+
+
+        <% end %>
+
+
+
+
+
+
+
+      </div>
+    </div>
